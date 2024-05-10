@@ -1,0 +1,49 @@
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black; /* 初期のボーダー */
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-width 0.3s ease-in-out; /* ボーダー幅の変更にトランジションを適用 */
+  }
+
+  /* チェックボックスが選択された状態のスタイル */
+  .box input[type="checkbox"]:checked + label {
+    background-color: yellow; /* 背景を黄色に変更 */
+  }
+
+  /* チェックボックスが選択されたときにボーダーを太くする */
+  .box input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid black; /* ボーダーを太く表示 */
+    pointer-events: none; /* クリックイベントを透過させる */
+    box-sizing: border-box;
+  }
+
+  .box label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1; /* ボーダーより上に表示 */
+  }

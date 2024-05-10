@@ -1,0 +1,21 @@
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+
+#targetImage{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#spotlight{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: all 0.1s ease-in-out;
+    pointer-events: none;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.5);
+    width: 100px;
+    height: 100px;
+}

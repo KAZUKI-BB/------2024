@@ -1,0 +1,6 @@
+#square {
+    position: absolute; /* 位置を絶対位置で指定するため */
+    width: 50px; /* 適切なサイズ設定 */
+    height: 50px;
+    background-color: red; /* 見やすい色 */
+}

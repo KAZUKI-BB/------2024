@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ランダムパスワードジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <label for="passwordLength">パスワードの長さ:</label>
+        <input type="number" id="passwordLength" min="1" placeholder="パスワードの長さを入力">
+        <button onclick="generatePassword()">生成</button>
+    </div>
+    <div>
+        <p>生成されたパスワード:</p>
+        <input type="text" id="generatedPassword" readonly>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

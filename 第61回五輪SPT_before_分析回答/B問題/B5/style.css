@@ -1,0 +1,72 @@
+/* 信号機の本体 */
+.traffic-light {
+    width: 240px;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    border-radius: 40px;
+  }
+
+  .light{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+  }
+
+  .light.green{
+    background-color: green;
+    animation: light-g 8s infinite;
+  }
+
+  .light.yellow{
+    background-color: yellow;
+    animation: light-y 8s infinite;
+  }
+
+  .light.red{
+    background-color: red;
+    animation: light-r 8s infinite;
+  }
+
+  @keyframes light-g {
+    0%, 50% { /* 0%から50%（最初の4秒間）は緑色が点灯 */
+      background-color: #2ecc71;
+      opacity: 1;
+    }
+    50.01%, 100% { /* 50.01%から100%（次の4秒間）は#333で透明度0.2 */
+      background-color: #333;
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes light-y{
+    0%,50%{
+        background-color: #333;
+        opacity: 0.2;
+    }
+    50.01%,60%{
+        background-color: yellow;
+        opacity: 1;
+    }
+    60.01%,100%{
+        background-color: #333;
+        opacity: 0.2;
+    }
+  }
+
+  @keyframes light-r{
+    0%,60%{
+        background-color: #333;
+        opacity: 0.2;
+    }
+    60.01%,100%{
+        background-color: red;
+        opacity: 1;
+    }
+
+  }

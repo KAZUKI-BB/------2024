@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お絵かきツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button class="color-btn" style="background-color: red;" data-color="red">赤</button>
+        <button class="color-btn" style="background-color: blue;" data-color="blue">青</button>
+        <button class="color-btn" style="background-color: green;" data-color="green">緑</button>
+        <button class="color-btn" style="background-color: yellow;" data-color="yellow">黄</button>
+        <button class="color-btn" style="background-color: black;" data-color="black">黒</button>
+    </div>
+    <canvas id="drawingCanvas" width="300" height="300"></canvas>
+    <button id="saveJPG">JPGとして保存</button>
+    <button id="savePNG">PNGとして保存</button>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.img-cont {
+    position: relative;
+    display: inline-block;
+}
+
+.img-cont:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .5s;
+    color: white;
+    font-size: 50px;
+}
+
+#imageA:hover:before {
+    content: "A";
+    opacity: 1;
+}
+
+#imageB:hover:before {
+    content: "B";
+    opacity: 1;
+}
+
+#imageC:hover:before {
+    content: "C";
+    opacity: 1;
+}
+
+
+
+
+
+/* .img-cont{
+    position: relative;
+    display: inline-block;
+}
+
+.img-cont img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-cont .caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.img-cont:hover .caption{
+    opacity: 1;
+}
+
+#imageA .caption:before{
+    content: "A";
+}
+
+#imageB .caption:before{
+    content: "B";
+}
+
+#imageC .caption:before{
+    content: "C";
+} */

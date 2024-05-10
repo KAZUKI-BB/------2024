@@ -1,0 +1,16 @@
+#app{
+    margin: 20px;
+}
+
+#colorInput{
+    width: 250px;
+    padding: 8px;
+}
+
+#result{
+    margin-top: 20px;
+    padding: 8px;
+    color: #fff;
+    background-color: #333;
+    width: fit-content;
+}

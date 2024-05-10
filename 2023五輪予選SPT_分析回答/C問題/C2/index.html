@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>行の追加と削除</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>数字</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="number" class="number-input"></td>
+                <td><button onclick="removeRow(this)">削除</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="addRow()">追加</button>
+    <div>
+        <p>平均点: <span id="averageDisplay">0</span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

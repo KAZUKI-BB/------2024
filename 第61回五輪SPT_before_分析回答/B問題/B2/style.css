@@ -1,0 +1,7 @@
+.todo_item input[type="checkbox"]:checked + label{
+    text-decoration: line-through;
+}
+
+.todo_list{
+    list-style-type: none;
+}
